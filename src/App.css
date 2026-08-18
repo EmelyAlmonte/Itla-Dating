@@ -1,0 +1,78 @@
+/* Variables de la paleta de colores de ITLA Dating */
+:root {
+  --primary: #e91e63;
+  --primary-hover: #c2185b;
+  --primary-dark: #ad1457;
+  --bg-main: #fff5f7;
+  --bg-card: #fce4ec;
+  --border-pink: #f8bbd0;
+  --text-dark: #880e4f;
+  --text-deep: #4a1525;
+}
+
+/* Estilos generales de la aplicación */
+html, body {
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  min-height: 100vh;
+}
+/* Estilos de la barra de navegación y logo */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 25px;
+  background-color: #ffffff;
+  border-bottom: 2px solid var(--border-pink);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(233, 30, 99, 0.05);
+}
+
+.logo-img {
+  height: 45px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Botones principales */
+.btn-primary {
+  background-color: var(--primary);
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+}
+
+/* Tarjetas de perfiles / Crush */
+.profile-card {
+  background-color: #ffffff;
+  border: 1px solid var(--border-pink);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(136, 14, 79, 0.08);
+  max-width: 350px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.profile-card h2 {
+  color: var(--text-dark);
+  margin-bottom: 8px;
+}
+
+.profile-card p {
+  color: var(--text-deep);
+}
